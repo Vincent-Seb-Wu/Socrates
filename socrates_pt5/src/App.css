@@ -4,6 +4,7 @@
   width: 100vw;
   height: 100vh;
   font-size: 6vw;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 button {
@@ -16,13 +17,8 @@ button {
   cursor: pointer;
   transition: 0.3s;
   outline: none;
-}
-
-button:hover {
+} button:hover {
   background-color: #08f;
-}
-
-button:active {
-  background-color: black;
-  color: #08f;
+} button:active {
+  color: white;
 }
