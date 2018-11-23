@@ -8,17 +8,46 @@
 }
 
 button {
-  background-color: #06f;
-  border: none;
+  background-color: #08f;
   font-size: 6vw;
-  padding: 10px 4vw;
-  margin: 10px;
+  padding: 5px 4vw;
+  margin: 20px;
   border-radius: 10px;
   cursor: pointer;
   transition: 0.3s;
-  outline: none;
+  border: dashed 6px;
+  border-color: rgba(0, 0, 0, 0);
 } button:hover {
-  background-color: #08f;
+  background-color: #0bf;
+  transform: scale(1.1);
+} button:focus {
+  border-color: white;
 } button:active {
-  color: white;
+  background-color: white;
+  transform: scale(0.9);
+}
+
+.vertical-center {
+  line-height: 100vh;
+  height: 100vh;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+} .flex > div {
+  flex-grow: 1;
+  position: relative;
+} .flex > div > div {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+}
+
+.double-font {
+  font-size: 150%;
 }
