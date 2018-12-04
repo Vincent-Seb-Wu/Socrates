@@ -8,8 +8,8 @@ class PageRate extends Component {
       <div className="flex">
         <div className="double-font"><div>You have been picked! </div></div>
         <div><div>Rate your willingness to answer the question: </div></div>
-        <Stars />
-        <ButtonNext onClick={this.props.nextPage}/>
+        <div><Stars /></div>
+        <div><ButtonNext onClick={this.props.nextPage}/></div>
       </div>
     );
   }
