@@ -14,7 +14,7 @@ class PageLogin extends Component {
         <div className="double-font"><div>Login </div></div>
         <div><div>
             <div>Your name: </div>
-            <input type='text' onChange={this.inputOnChange}/>
+            <input type='text' onChange={this.inputOnChange} onKeyUp={this.onInputKeyPress} />
         </div></div>
         <div><ButtonNext onClick={this.submitUsername}/></div>
       </div>
@@ -27,6 +27,12 @@ class PageLogin extends Component {
   
   submitUsername = () => {
       this.props.loginDone(this.state.username);
+  }
+  
+  onInputKeyPress = (event) => {
+      if (event.keyCode === 13) {
+          this.submitUsername();
+      }
   }
 }
 

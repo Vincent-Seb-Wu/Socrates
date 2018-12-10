@@ -3,17 +3,12 @@
   background-color:	rgb(64, 168, 238);
   width: 100vw;
   height: 100vh;
-  font-size: 8vh;
+  font-size: 4vw;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
-.pick {
-  padding-top: 30vh;
-  padding-bottom: 1vh;
-}
-
-.but {
-  padding-bottom: 1vh;
+.air-hat {
+  padding-top: 5vh;
 }
 
 button {
@@ -34,4 +29,20 @@ button {
 } button:active {
   background-color: white;
   transform: scale(0.9);
+}
+
+table {
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: auto;
+    padding: 0;
+    font-size: 3vw;
+    transition: 0.3s;
+}
+
+th {
+    padding: 1vw 2vw;
+}
+
+tr {
+    transition: 0.3s;
 }

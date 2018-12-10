@@ -4,10 +4,10 @@ class PageYouGo extends Component {
     return (
       <div className="flex">
         <div><div>
-          You ranked the first!
+          You {this.props.real ? `ranked` : `didn't rank`} the first!
         </div></div>
         <div><div>
-          Now, go ahead and answer the question! 
+            {this.props.real ? 'Now, go ahead and answer the question! ' : `Plz listen carefully to ${this.props.who}`}
         </div></div>
         <div><div></div></div>
       </div>

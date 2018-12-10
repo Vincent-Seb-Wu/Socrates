@@ -16,7 +16,7 @@ class Stars extends Component {
 }
 
 const OneStar = (props) => (
-    <img src={`https://icongr.am/entypo/star${props.index < props.score ? '' : '-outlined'}.svg`} alt={props.index < props.score ? '*' : '_'} onClick={() => {props.onClick(props.index);}} />
+    <img className="star" src={`https://icongr.am/entypo/star${props.index < props.score ? '' : '-outlined'}.svg`} alt={props.index < props.score ? '*' : '_'} onClick={() => {props.onClick(props.index);}} />
 )
 
 export default Stars;

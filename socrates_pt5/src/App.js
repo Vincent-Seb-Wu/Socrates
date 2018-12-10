@@ -15,6 +15,7 @@ const fireState = database.ref('state');
 class App extends Component {
   constructor (props) {
     super(props);
+    document.title = 'Socrates';
     this.state = {
       page_num: 0, 
       username: '', 
@@ -22,9 +23,19 @@ class App extends Component {
       prof_said_go: false, 
     };
     fireState.on('value', (snapshot) => {
-        this.setState(snapshot.val());
-        if (this.state.page_num === 1 && this.state.prof_said_go) {
+        const state = snapshot.val();
+        this.setState(state);
+        if (this.state.page_num === 1 && state.prof_said_go) {
             this.nextPage();
+            if (! state.students[this.state.username].selected) {
+                this.nextPage();
+            }
+        }
+        if (this.state.page_num === 3 && Object.values(state.students).every((student) => (! student.selected))) {
+            this.nextPage();
+        }
+        if (this.state.page_num === 4 && ! state.prof_said_go) {
+            this.setState({page_num: 1});
         }
     });
   }
@@ -35,10 +46,11 @@ class App extends Component {
       <PageWaitProf />, 
       <PageRate rateDone={this.rateDone} />, 
       <PageWaitOthers />, 
-      <PageYouGo />, 
+      <PageYouGo real={this.getMax() === this.state.username} who={this.getMax()} />, 
     ][this.state.page_num];
     return (
       <div className="App">
+        <div id="username">{this.state.username}</div>
         {this.page}
       </div>
     );
@@ -48,16 +60,12 @@ class App extends Component {
     this.setState({page_num: this.state.page_num + 1});
   }
   
-  setStateUpload (delta) {
-    this.setState(delta);
-    fireState.update(delta);
-  }
-  
-  resetDatabase () {
-    fireState.set({
-        ...this.state,
-        page_num: 0, 
-        username: '', 
+  setStateUpload = (delta) => {
+    this.setState(delta, () => {
+        fireState.set({
+            students: this.state.students, 
+            prof_said_go: this.state.prof_said_go, 
+        });
     });
   }
   
@@ -67,9 +75,10 @@ class App extends Component {
       });
       this.setStateUpload({
           students: {
-              username: {
-                  damage_dealt: 0, 
-                  ratinig: -1, 
+              ...this.state.students, 
+              [username]: {
+                  rating: '...', 
+                  selected: false, 
               }, 
           }, 
       });
@@ -79,13 +88,28 @@ class App extends Component {
   rateDone = (score) => {
       this.setStateUpload({
           students: {
+              ...this.state.students, 
               [this.state.username]: {
                   rating: score, 
+                  selected: false, 
               }
           }
       });
       this.nextPage();
   }
+  
+  getMax = () => {
+    let name;
+    let max_rating = 0;
+    Object.entries(this.state.students).map((student) => {
+        if (student[1].rating > max_rating) {
+            name = student[0];
+            max_rating = student[1].rating;
+        }
+        return null;
+    });
+    return name;
+  };
 }
 
 export default App;

@@ -17,6 +17,7 @@ button {
   transition: 0.3s;
   border: dashed 6px;
   border-color: rgba(0, 0, 0, 0);
+  user-select: none;
 } button:hover {
   background-color: #0bf;
   transform: scale(1.1);
@@ -29,13 +30,18 @@ button {
 
 .vertical-center {
   line-height: 100vh;
-  height: 100vh;
+  height: 95vh;
+}
+
+#username {
+    height: 5vh;
+    font-size: 3vh;
 }
 
 .flex {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 95vh;
 } .flex > div {
   flex-grow: 1;
   position: relative;
@@ -59,4 +65,20 @@ input {
     padding: 1vw;
     outline: none;
     font-family: 'comic sans ms', 'papyrus', sans-serif;
+}
+
+.star {
+    transfrom: scale(2);
+    width: 6vw;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: rgba(255,255,255, 0.3);
+    margin: 0.5vw;
+    user-select: none;
+    border-radius: 1vw;
+    padding: 0.4vw;
+} .star:hover {
+    transform: translate(0, -1vw);
+} .star:active {
+    transform: translate(0, 0);
 }
