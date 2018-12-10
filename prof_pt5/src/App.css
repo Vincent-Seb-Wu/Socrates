@@ -1,0 +1,37 @@
+.App {
+  text-align: center;
+  background-color:	rgb(64, 168, 238);
+  width: 100vw;
+  height: 100vh;
+  font-size: 8vh;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.pick {
+  padding-top: 30vh;
+  padding-bottom: 1vh;
+}
+
+.but {
+  padding-bottom: 1vh;
+}
+
+button {
+  background-color:#f90;
+  font-size: 4vw;
+  padding: 5px 4vw;
+  margin: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: dashed 6px;
+  border-color: rgba(0, 0, 0, 0);
+} button:hover {
+  background-color: rgb(243, 190, 109);
+  transform: scale(1.1);
+} button:focus {
+  border-color: white;
+} button:active {
+  background-color: white;
+  transform: scale(0.9);
+}
