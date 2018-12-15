@@ -29,3 +29,6 @@ Professor Link: [Heroku] (https://socrates-prof.herokuapp.com)
 Student Link: : [Heroku] (https://socrates-demo.herokuapp.com)
 
 ! [QR Code] (frame-1.PNG)
+
+
+__[Try the App](https://fierce-citadel-44960.herokuapp.com/)__
