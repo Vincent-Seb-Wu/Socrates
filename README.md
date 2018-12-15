@@ -31,4 +31,4 @@ Student Link: __[Heroku](https://socrates-demo.herokuapp.com)__
 ![QR Code](frame-1.PNG)
 
 
-![QR code](Joinin.png) 
+![Alt Text](https://media.giphy.com/media/hTAUNCiS4q3IClMbRV/giphy.gif)
