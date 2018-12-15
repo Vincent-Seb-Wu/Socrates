@@ -22,13 +22,13 @@ The students login with their name and wait for the professor to click on the bu
 
 ## **Links**
 
-Professor Link: [Heroku] (https://socrates-prof.herokuapp.com)
+Professor Link: __[Heroku](https://socrates-prof.herokuapp.com)__
 
 ! [QR Code] (frame.PNG)
 
-Student Link: : [Heroku] (https://socrates-demo.herokuapp.com)
+Student Link: __[Heroku](https://socrates-demo.herokuapp.com)__
 
 ! [QR Code] (frame-1.PNG)
 
 
-__[Try the App](https://fierce-citadel-44960.herokuapp.com/)__
+
