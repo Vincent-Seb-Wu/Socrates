@@ -24,11 +24,4 @@ The students login with their name and wait for the professor to click on the bu
 
 Professor Link: __[Heroku](https://socrates-prof.herokuapp.com)__
 
-![QR Code](frame.PNG)
-
 Student Link: __[Heroku](https://socrates-demo.herokuapp.com)__
-
-![QR Code](frame-1.PNG)
-
-
-
