@@ -12,23 +12,23 @@ This application solves every problem! There are two parts to the app, one profe
 
 The professor can see the students that have entered the list. At the top the said list, there is a button that, when pressed, chooses two random people from the list. When the two students choose their "willingness" to answer a question, the system chooses the one with more stars.
 
-! [Professor] (https://gph.is/2Cfd3rG)
+![Professor](https://gph.is/2Cfd3rG)
 
 ### *Student:*
 
 The students login with their name and wait for the professor to click on the button. Once the professor clicks a button, two students will be chosen to choose their *willingness* to answer a question. The student who has more stars will be chosen to answer the question.
 
-! [Students] (https://gph.is/2CdHJtk)
+![Students](https://gph.is/2CdHJtk)
 
 ## **Links**
 
 Professor Link: __[Heroku](https://socrates-prof.herokuapp.com)__
 
-! [QR Code] (frame.PNG)
+![QR Code](frame.PNG)
 
 Student Link: __[Heroku](https://socrates-demo.herokuapp.com)__
 
-! [QR Code] (frame-1.PNG)
+![QR Code](frame-1.PNG)
 
 
-
+![QR code](Joinin.png) 
