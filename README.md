@@ -12,7 +12,7 @@ This application solves every problem! There are two parts to the app, one profe
 
 The professor can see the students that have entered the list. At the top the said list, there is a button that, when pressed, chooses two random people from the list. When the two students choose their "willingness" to answer a question, the system chooses the one with more stars.
 
-![Professor](https://gph.is/2Cfd3rG)
+![Professors](https://gph.is/2Cfd3rG)
 
 ### *Student:*
 
@@ -31,4 +31,4 @@ Student Link: __[Heroku](https://socrates-demo.herokuapp.com)__
 ![QR Code](frame-1.PNG)
 
 
-![Alt Text](https://media.giphy.com/media/hTAUNCiS4q3IClMbRV/giphy.gif)
+
